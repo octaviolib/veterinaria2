@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6a31052744.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-warning-subtle">
+
+
+    <!-- HEADER -->
+    <header class="bg-black bg-opacity-75 border-bottom border-3 border-success border-opacity-75">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand ms-2">
+
+                    <img src="assets/logo.png"
+                        alt="Logo Veterinaria Campestre"
+                        width="60"
+                        height="45">
+
+                </a>
+
+
+                <!-- Boton hamburguesa -->
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- Menu -->
+                <div class="offcanvas offcanvas-end text-bg-dark"
+                    tabindex="-1"
+                    id="menuPrincipal">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title">
+                            Veterinaria Campestre
+                        </h5>
+
+                        <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Cerrar">
+                        </button>
+
+                    </div>
+
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav ms-auto gap-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white border border-success rounded-4 px-3"
+                                    href="index.html">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white border border-success rounded-4 px-3"
+                                    href="servicios.html">
+                                    Servicios
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white border border-success rounded-4 px-3"
+                                    href="institucional.html">
+                                    Acerca de
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-white border border-success rounded-4 px-3"
+                                    aria-current="page"
+                                    href="contacto.html">
+                                    Contacto
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="container py-5">
+
+
+        <!-- TITULO -->
+        <div class="text-center mb-5">
+
+            <h1 class="text-danger-emphasis">
+                Contactanos
+            </h1>
+
+            <p class="text-danger-emphasis">
+                Estamos para ayudarte con la salud y el cuidado de tus animales.
+            </p>
+
+        </div>
+
+
+        <!-- GRID PRINCIPAL -->
+        <div class="row g-4">
+
+
+            <!-- FORMULARIO -->
+            <div class="col-12 col-lg-7">
+
+                <div class="card shadow-sm border-success h-100">
+
+                    <div class="card-body p-4">
+
+                        <h2 class="card-title text-danger-emphasis mb-4">
+                            Envia tu consulta
+                        </h2>
+
+
+                        <!-- ALERT -->
+                        <div class="alert alert-success alert-dismissible fade show"
+                            role="alert">
+
+                            <strong>Importante:</strong>
+                            Completa tus datos y nos pondremos en contacto con vos.
+
+                            <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="alert"
+                                aria-label="Cerrar">
+                            </button>
+
+                        </div>
+
+
+                        <!-- FORMULARIO -->
+                        <form>
+
+
+                            <!-- NOMBRE -->
+                            <div class="mb-3">
+
+                                <label for="nombre"
+                                    class="form-label">
+                                    Nombre completo
+                                </label>
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    placeholder="Ingresa tu nombre"
+                                    required>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+                            <div class="mb-3">
+
+                                <label for="email"
+                                    class="form-label">
+                                    Correo electronico
+                                </label>
+
+                                <input type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="nombre@ejemplo.com"
+                                    required>
+
+                                <div class="form-text">
+                                    Nunca compartiremos tu correo con terceros.
+                                </div>
+
+                            </div>
+
+
+                            <!-- TELEFONO -->
+                            <div class="mb-3">
+
+                                <label for="telefono"
+                                    class="form-label">
+                                    Telefono
+                                </label>
+
+                                <input type="tel"
+                                    class="form-control"
+                                    id="telefono"
+                                    placeholder="+54 9 261 0000000">
+
+                            </div>
+
+
+                            <!-- MOTIVO -->
+                            <div class="mb-3">
+
+                                <label for="motivo"
+                                    class="form-label">
+                                    Motivo de la consulta
+                                </label>
+
+                                <select class="form-select"
+                                    id="motivo"
+                                    required>
+
+                                    <option selected disabled value="">
+                                        Selecciona una opcion
+                                    </option>
+
+                                    <option>
+                                        Consulta general
+                                    </option>
+
+                                    <option>
+                                        Sanidad animal
+                                    </option>
+
+                                    <option>
+                                        Reproduccion
+                                    </option>
+
+                                    <option>
+                                        Clinica y cirugia
+                                    </option>
+
+                                    <option>
+                                        Nutricion y genetica
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MENSAJE -->
+                            <div class="mb-3">
+
+                                <label for="mensaje"
+                                    class="form-label">
+                                    Mensaje
+                                </label>
+
+                                <textarea class="form-control"
+                                    id="mensaje"
+                                    rows="5"
+                                    placeholder="Escribi tu consulta..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <!-- CHECK -->
+                            <div class="form-check mb-4">
+
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    id="acepto"
+                                    required>
+
+                                <label class="form-check-label"
+                                    for="acepto">
+
+                                    Acepto que la veterinaria se contacte conmigo.
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- BOTON -->
+                            <button type="submit"
+                                class="btn btn-success px-4">
+
+                                <i class="fa-solid fa-paper-plane me-2"></i>
+
+                                Enviar consulta
+
+                            </button>
+
+
+                            <button type="reset"
+                                class="btn btn-outline-secondary ms-2">
+
+                                Limpiar
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACION -->
+            <div class="col-12 col-lg-5">
+
+                <div class="card shadow-sm border-success h-100">
+
+                    <div class="card-body p-4">
+
+                        <h2 class="card-title text-danger-emphasis mb-4">
+                            Informacion de contacto
+                        </h2>
+
+
+                        <div class="mb-4">
+
+                            <h5 class="text-success">
+                                <i class="fa-solid fa-phone me-2"></i>
+                                Telefono
+                            </h5>
+
+                            <p class="mb-0">
+                                +54 9 261 5946310
+                            </p>
+
+                        </div>
+
+
+                        <div class="mb-4">
+
+                            <h5 class="text-success">
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                Email
+                            </h5>
+
+                            <p class="mb-0">
+                                veterinaria@campestre.com
+                            </p>
+
+                        </div>
+
+
+                        <div class="mb-4">
+
+                            <h5 class="text-success">
+                                <i class="fa-solid fa-location-dot me-2"></i>
+                                Direccion
+                            </h5>
+
+                            <p class="mb-0">
+                                Ruta provincial N° 4,
+                                Entre Rios, Argentina.
+                            </p>
+
+                        </div>
+
+
+                        <!-- MAPA -->
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden border border-success border-3">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!4v1788392998017!6m8!1m7!1sbh8ZGT31B1_1k4IfgegkPw!2m2!1d-31.2579641749222!2d-58.20121266815634!3f348.1673611035196!4f-3.5014998434795785!5f0.7820865974627469"
+                                style="border:0;"
+                                loading="lazy">
+                            </iframe>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- WHATSAPP -->
+    <button
+        onclick="window.open('https://wa.me/5492615946310?text=Hola%2C%20quisiera%20consultar%20por%20un%20turno.', '_blank')"
+        class="btn btn-outline-success border border-success rounded-circle position-fixed bottom-0 end-0 m-4 shadow d-flex align-items-center justify-content-center opacity-75"
+        style="width: 65px; height: 65px; z-index: 1050;">
+
+        <i class="fa-brands fa-square-whatsapp fs-1"></i>
+
+    </button>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black bg-opacity-75 border-top border-3 border-success border-opacity-75 mt-auto">
+
+        <div class="container py-4">
+
+            <div class="row gy-3 justify-content-between">
+
+
+                <div class="col-12 col-md-4">
+
+                    <h3 class="text-success opacity-75">
+                        Veterinaria Campestre
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+                        Cuidamos la salud y el bienestar de tus animales.
+                    </p>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <h3 class="text-success opacity-75">
+                        Contacto
+                    </h3>
+
+                    <p class="text-secondary mb-1">
+                        Tel: +54 9 261 5946310
+                    </p>
+
+                    <p class="text-secondary mb-1">
+                        veterinaria@campestre.com
+                    </p>
+
+                    <p class="text-secondary mb-0">
+                        Entre Rios, Argentina
+                    </p>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <h3 class="text-success opacity-75">
+                        Seguinos
+                    </h3>
+
+                    <a href="https://www.facebook.com/?locale=es_LA"
+                        class="me-3">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                        class="me-3">
+
+                        <i class="fa-brands fa-instagram text-danger opacity-75"></i>
+
+                    </a>
+
+                    <a href="https://web.whatsapp.com/">
+
+                        <i class="fa-brands fa-whatsapp text-success"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-top border-secondary text-secondary text-center py-2">
+
+            <p class="mb-0">
+                &copy; 2026 Veterinaria Campestre -
+                Todos los derechos reservados por equipo 16 de TUDW -
+                intro.desarrollo web - UNER.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
+
